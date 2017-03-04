@@ -1,20 +1,16 @@
-# Rails Devise token seed
+# Rails Devise token
 
-Backend part for the "Angular & Rails user authentification" tutorial: https://medium.com/@avatsaev/angular-2-and-ruby-on-rails-user-authentication-fde230ddaed8#.bq7ibrz5e
+This project uses Rails5 API only setup. It uses DeviseAuthToken & rack-cors gems to enable cross browser calls.
 
-## Install
+Purpose is to setup rails apis to be used any frontent framework like Angular, React, Ionic etc
 
+## Possible Issues
+
+You may need to install Allow-Control-Allow-Origin chrome extension.
+
+It has a seed user(user@example.com / monkey67)
+
+Before testing use this: 
 ```
-bundle install
-```
-
-## Init the databse 
-
-```
-rails db:create && rails db:migrate && rails db:seed
-```
-
-## Run
-```
-rails s
+user.tokens = nil
 ```
